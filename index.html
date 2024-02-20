@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý Sinh viên</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <h1>Quản lý Sinh viên</h1>
+
+    <button onclick="quanLySinhVien()">Tạo mới</button>
+
+    <table id="danhSachSinhVien">
+        <thead>
+            <tr>
+                <th>Số thứ tự</th>
+                <th>Mã Sinh viên</th>
+                <th>Họ và Tên</th>
+                <th>Ngày Sinh</th>
+                <th>Lớp học</th>
+                <th>GPA</th>
+                <th>Thao tác</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Dòng trống, sẽ được điền bởi JavaScript -->
+        </tbody>
+    </table>
+
+    <button onclick="themDongMoi(document.getElementById('danhSachSinhVien').getElementsByTagName('tbody')[0])">Thêm</button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
